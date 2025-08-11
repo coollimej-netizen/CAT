@@ -6,7 +6,7 @@
   <title>세로 3장 이미지</title>
   <style>
     :root {
-      --max-width: 420px; /* 전체 컨테이너 최대 너비 (원하면 변경) */
+      --max-width: 420px;
     }
 
     body {
@@ -23,7 +23,7 @@
       max-width: var(--max-width);
       display: flex;
       flex-direction: column;
-      gap: 16px; /* 이미지 사이 간격 */
+      gap: 16px;
     }
 
     .item {
@@ -34,19 +34,16 @@
       background: #ddd;
     }
 
-    /* 이미지가 컨테이너에 맞추어 자동으로 잘림 없이 채움 */
     .item img {
       width: 100%;
-      height: 280px; /* 각 이미지 높이 (원하면 변경 또는 min-height 사용) */
-      object-fit: cover;
+      height: auto;
       display: block;
     }
 
-    /* 이미지 위에 올라가는 텍스트 스타일 */
     .caption {
       position: absolute;
       left: 12px;
-      top: 12px;
+      bottom: 12px;
       padding: 6px 10px;
       background: rgba(0,0,0,0.45);
       color: white;
@@ -55,30 +52,26 @@
       backdrop-filter: blur(4px);
     }
 
-    /* 반응형: 작은 화면에서는 높이를 줄임 */
     @media (max-width: 420px) {
-      .item img { height: 200px; }
+      .item img { height: auto; }
     }
   </style>
 </head>
 <body>
   <div class="stack">
-    <!-- 1번 이미지: src에 파일명 또는 URL 넣으세요 -->
     <div class="item">
       <img src="자는.jpg.png" alt="이미지 1 설명" />
       <div class="caption">같이 자기</div>
     </div>
 
-    <!-- 2번 이미지 -->
     <div class="item">
       <img src="노는.jpg.png" alt="이미지 2 설명" />
       <div class="caption">같이 놀기</div>
     </div>
 
-    <!-- 3번 이미지 -->
     <div class="item">
       <img src="TV.jpg.png" alt="이미지 3 설명" />
-      <div class="caption">같이tv보기</div>
+      <div class="caption">같이 TV 보기</div>
     </div>
   </div>
 </body>
