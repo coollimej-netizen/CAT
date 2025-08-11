@@ -60,17 +60,17 @@
 <body>
   <div class="stack">
     <div class="item">
-      <img src="자는.jpg.png" alt="이미지 1 설명" />
+      <img src="자는.jpg" alt="이미지 1 설명" />
       <div class="caption">같이 자기</div>
     </div>
 
     <div class="item">
-      <img src="노는.jpg.png" alt="이미지 2 설명" />
+      <img src="노는.jpg" alt="이미지 2 설명" />
       <div class="caption">같이 놀기</div>
     </div>
 
     <div class="item">
-      <img src="TV.jpg.png" alt="이미지 3 설명" />
+      <img src="TV.jpg" alt="이미지 3 설명" />
       <div class="caption">같이 TV 보기</div>
     </div>
   </div>
